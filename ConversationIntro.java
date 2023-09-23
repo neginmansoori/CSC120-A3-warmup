@@ -67,11 +67,11 @@ public class ConversationIntro {
   /** Returns true if its input is prime */
   public static boolean isPrime(int n) {
     boolean isPrime = (n > 1); // one, zero, and negatives not prime
-    /*for (int i = 2; i <= Math.sqrt(n); i++) {
+    for (int i = 2; i <= Math.sqrt(n); i++) {
         if (n%i == 0) {
             isPrime = false;
         }
-    }*/
+    }
     return isPrime;
   }
 
@@ -80,8 +80,12 @@ public class ConversationIntro {
    */
   
   /** Returns true if its input is even */
-  public boolean isEven(int n) {
-    return false;
+  public boolean isEven(int n) { /* not static? */
+    boolean isEven = (n>0)
+    if (n%2 == 0){
+      isEven == true;
+    }
+    return isEven;
   }
 
   /*
@@ -96,8 +100,7 @@ public class ConversationIntro {
   
   /** Returns true if its input is a comma */
   public static boolean isComma(String s) {
-    //return s.equals(",");
-    return (s == ",");
+    return s.equals(",");
   }
 
   /*
@@ -106,7 +109,7 @@ public class ConversationIntro {
   
   /** Returns true if its input is one of:  .,?! */
   public boolean isPunctuation(String s) {
-    return false;
+    return (s.equals("!") || s.equals(".") || s.equals("?")) 
   }
 
   /*
@@ -115,6 +118,17 @@ public class ConversationIntro {
   
   /** Returns its input, unless it is "I" or "you", which switch */
   public String mirrorWord(String s) {
+    if (s.equals("I")){
+      s = "You";
+    
+    else if (s.equals("You")){
+      s = "I";
+    }
+    /* deleted the else if (!= I or You) 
+    can it be like if X: return y instead of changing the value of s?
+    */
+    }
+    }
     return s;
   }
 
@@ -129,9 +143,9 @@ public class ConversationIntro {
   /** Returns an array of whole numbers up to n */
   public static int[] wholeNumbers(int n) {
     int[] arr = new int[n]; // allocate space for the array
-    //for (int i = 0; i < n; i++) {
-    //  arr[i] = i+1;
-    //}
+    for (int i = 0; i < n; i++) {
+      arr[i] = i+1;
+    }
     return arr;
   }
 
@@ -143,6 +157,9 @@ public class ConversationIntro {
   /** Returns an array of squares from 1 to n*n */
   public static int[] squares(int n) {
     int[] arr = new int[n]; // allocate space for the array
+    for (i=0 ; i <= n ; i++){
+      arr[i] = i*i;
+    }
     return arr;
   }
 }
