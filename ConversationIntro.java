@@ -9,7 +9,7 @@ public class ConversationIntro {
   
   /** Returns an integer one larger than its input */
   public int plusOne(int n) {
-    // n = n+1;
+    n = n+1;
     return n;
   }
 
@@ -21,7 +21,8 @@ public class ConversationIntro {
   
   /** Returns an integer that is double its input */
   public int timesTwo(int n) {
-    return 0;
+    n = n*2;
+    return n;
   }
 
   /*
@@ -30,7 +31,8 @@ public class ConversationIntro {
   
   /** Returns the square of its input */
   public int squared(int n) {
-    return 0;
+    n = n * n;
+    return n;
   }
 
   /*
@@ -39,7 +41,8 @@ public class ConversationIntro {
   
   /** Divides its input by seven, dropping remainders */
   public int intDivideBy7(int n) {
-    return 0;
+    n = n/7;
+    return n;
   }
 
   /*
@@ -48,6 +51,7 @@ public class ConversationIntro {
   
   /** Divides its input by 7 */
   public double doubleDivideBy7(int n) {
+    n = n/7;
     return 0;
   }
 
