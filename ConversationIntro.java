@@ -156,8 +156,8 @@ public class ConversationIntro {
   
   /** Returns an array of squares from 1 to n*n */
   public static int[] squares(int n) {
-    int[] arr = new int[n]; // allocate space for the array
-    for (i=0 ; i <= n ; i++){
+    int[] arr = new int[n+1]; // allocate space for the array
+    for (int i = 0; i <= n ; i++){
       arr[i] = i*i;
     }
     return arr;
