@@ -81,9 +81,9 @@ public class ConversationIntro {
   
   /** Returns true if its input is even */
   public boolean isEven(int n) { /* not static? */
-    boolean isEven = (n>0)
+    boolean isEven = (n>0);
     if (n%2 == 0){
-      isEven == true;
+      isEven = true;
     }
     return isEven;
   }
@@ -109,7 +109,7 @@ public class ConversationIntro {
   
   /** Returns true if its input is one of:  .,?! */
   public boolean isPunctuation(String s) {
-    return (s.equals("!") || s.equals(".") || s.equals("?")) 
+    return (s.equals("!") || s.equals(".") || s.equals("?")) ;
   }
 
   /*
@@ -118,17 +118,17 @@ public class ConversationIntro {
   
   /** Returns its input, unless it is "I" or "you", which switch */
   public String mirrorWord(String s) {
-    if (s.equals("I")){
+    if (s.equals("I")) {
       s = "You";
-    
-    else if (s.equals("You")){
+      } 
+    else if (s.equals("You")) {
       s = "I";
     }
+
     /* deleted the else if (!= I or You) 
     can it be like if X: return y instead of changing the value of s?
     */
-    }
-    }
+
     return s;
   }
 
@@ -161,5 +161,4 @@ public class ConversationIntro {
       arr[i] = i*i;
     }
     return arr;
-  }
-}
+  }}
